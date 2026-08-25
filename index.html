@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altalux</title>
+    <link href="inicio.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logotipo.png" alt="logotipo" class="logotipo">
+        </a>
+        <div id="empty_barranav"></div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="#galeria">Galería</a>
+            <a href="sobre_nosotros.html">Sobre nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <article id="inicio" class="purple">
+            <div id="inicio_texto">
+                <h1 id="primera_frase">Cada detalle <span>grabado</span>
+                    <br>con exactitud
+                </h1>
+                <p>Personalizamos tus piezas con tecnología láser de
+                    <br>alta precisión. Madera, metal, acrílico y más — con
+                    <br>acabados que duran.
+                </p>
+            </div>
+        </article>
+        <article class="white" id="articulo_tarjetas">
+            <div class="rectangulos">
+                <img src="icono1.png" alt="icono1" class="iconos">
+                <h3>Acabados premium</h3>
+                <p>Grabado con alta resolución en una variedad de materiales nobles.</p>
+            </div>
+            <div class="rectangulos">
+                <img src="icono2.png" alt="icono2" class="iconos">
+                <h3>Diseño personalizado</h3>
+                <p>Traemos tu logo, texto o imagen con precisión milimétrica.</p>
+            </div>
+            <div class="rectangulos">
+                <img src="icono3.png" alt="icono3" class="iconos">
+                <h3>Entregas puntuales</h3>
+                <p>Cumplimos tiempos sin sacrificar la calidad del resultado.</p>
+            </div>
+        </article>
+
+
+        <article id="galeria" class="purple">
+            <h2>Galería</h2>
+            <p class="p_center" id="p_abajo_galeria">Nuestros trabajos más recientes</p>
+            <div class="carrusel_wrapper">
+                <button class="carrusel_btn carrusel_prev" aria-label="Anterior">&#8249;</button>
+                <div class="carrusel_track" id="carruselTrack">
+                    <div class="slide" data-material="Madera" data-nombre="Nombre del producto">
+                        <img src="Personalizado1_5.png" alt="TableTend">
+                        <div class="slide_info">
+                            <span class="slide_material">Madera</span>
+                            <p class="slide_nombre">Table tend grabado con redes</p>
+                        </div>
+                    </div>
+                    <div class="slide" data-material="Cuero" data-nombre="Llavero personalizado">
+                        <img src="Catalogo4_5.png" alt="Llavero de cuero grabado">
+                        <div class="slide_info">
+                            <span class="slide_material">Cuero sintético</span>
+                            <p class="slide_nombre">Llavero con logo grabado</p>
+                        </div>
+                    </div>
+                    <div class="slide" data-material="Metal" data-nombre="Termo con nombre grabado">
+                        <img src="Personalizado2.jpeg" alt="Termo grabado">
+                        <div class="slide_info">
+                            <span class="slide_material">Metal</span>
+                            <p class="slide_nombre">Termo con nombre grabado</p>
+                        </div>
+                    </div>
+                    <div class="slide" data-material="Piel" data-nombre="Table tend grabado con redes">
+                        <img src="Catalogo1_5.jpeg" alt="Parche de piel">
+                        <div class="slide_info">
+                            <span class="slide_material">Piel sintética</span>
+                            <p class="slide_nombre">Parche con logo grabado</p>
+                        </div>
+                    </div>
+                    <div class="slide" data-material="Madera" data-nombre="Table tend grabado con redes">
+                        <img src="Personalizado3.png" alt="Etiquetas para crochet">
+                        <div class="slide_info">
+                            <span class="slide_material">Cuero sintético</span>
+                            <p class="slide_nombre">Etiquetas para crochet con frase grabada</p>
+                        </div>
+                    </div>
+                    <div class="slide" data-material="Madera" data-nombre="Llavero personalizado">
+                        <img src="Catalogo2_5.png" alt="Etiquetas para crochet">
+                        <div class="slide_info">
+                            <span class="slide_material">Madera</span>
+                            <p class="slide_nombre">Llavero con imagen grabada</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carrusel_btn carrusel_next" aria-label="Siguiente">&#8250;</button>
+            </div>
+            <div class="carrusel_dots" id="carruselDots"></div>
+        </article>
+
+        
+        <article class="white" id="faq">
+            <h2>Preguntas frecuentes</h2>
+
+            <div class="faq_contenedor">
+
+                <div class="faq_item">
+                    <button class="faq_pregunta">
+                        ¿Puedo mandarles mi propio diseño o logo?
+                        <span class="faq_icono">+</span>
+                    </button>
+                    <div class="faq_respuesta">
+                        <p>Sí, puedes enviarnos tu diseño, logo o texto por WhatsApp y lo grabamos tal cual. Aceptamos imágenes en JPG, PNG o PDF. Si no tienes el archivo listo, también te ayudamos a prepararlo.</p>
+                    </div>
+                </div>
+
+                <div class="faq_item">
+                    <button class="faq_pregunta">
+                        ¿Cuánto tiempo tardan en entregar?
+                        <span class="faq_icono">+</span>
+                    </button>
+                    <div class="faq_respuesta">
+                        <p>El tiempo de entrega depende del tipo de pedido:</p>
+                        <ul>
+                            <li><span class="respuesta_bold">Pedidos de catálogo:</span> el grabado se realiza en menos de una hora.
+                            <li><span class="respuesta_bold">Pedidos personalizados:</span> el tiempo varía según cuándo recibimos la materia prima, el diseño de personalización y el proceso de grabado. Por eso, la fecha de entrega se programa una vez que el producto está terminado.
+                            <li><span class="respuesta_bold">Entrega en Querétaro:</span> normalmente se entrega un día después de que el producto queda listo.
+                            <li><span class="respuesta_bold">Fecha a tu conveniencia:</span> tú puedes establecer la fecha de entrega que prefieras.
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq_item">
+                    <button class="faq_pregunta">
+                        ¿Hacen pedidos pequeños o solo por volumen?
+                        <span class="faq_icono">+</span>
+                    </button>
+                    <div class="faq_respuesta">
+                        <p>Manejamos ambos. Aceptamos desde una sola pieza hasta pedidos por volumen de hasta <span class="respuesta_bold">150 piezas</span>, dependiendo de la complejidad del diseño y el material.
+                            <br>Ten en cuenta que el tiempo de producción varía según el tipo de pieza (por ejemplo, no es lo mismo grabar texto simple en madera que un diseño detallado en metal), por lo que para pedidos grandes te recomendamos contactarnos con anticipación para coordinar la fecha de entrega.</p>
+                    </div>
+                </div>
+
+                <div class="faq_item">
+                    <button class="faq_pregunta">
+                        ¿Qué materiales aceptan?
+                        <span class="faq_icono">+</span>
+                    </button>
+                    <div class="faq_respuesta">
+                        <p>Trabajamos principalmente con:</p>
+                        <ul>
+                            <li>Madera</li>
+                            <li>Cuero</li>
+                            <li>Metal cubierto/pintado (ej. termos, tazas con recubrimiento)</li>
+                        </ul>
+                        <p>
+                            <span class="respuesta_bold">¿Puedo traer mi propio objeto?</span>
+                            <br>¡Sí! Aceptamos piezas personales, pero antes de confirmar el pedido revisamos el material para asegurarnos de que se pueda grabar correctamente. Por ejemplo, no podemos grabar metal desnudo o pulido (como joyería sin recubrimiento), ya que refleja el láser y no logra un grabado visible.
+                            Si tienes dudas sobre si tu objeto es compatible, contáctanos y con gusto lo revisamos antes de cotizar.</p>
+                    </div>
+                </div>
+
+                <div class="faq_item">
+                    <button class="faq_pregunta">
+                        ¿Cómo les pago?
+                        <span class="faq_icono">+</span>
+                    </button>
+                    <div class="faq_respuesta">
+                        <p>Aceptamos <span class="respuesta_bold">transferencia bancaria y efectivo.</span></p>
+                        <ul>
+                            <li><span class="respuesta_bold">Pedidos de catálogo:</span> se paga el 100% antes de realizar la grabación.</li>
+                            <li><span class="respuesta_bold">Pedidos personalizados:</span> se requiere un anticipo del 50% para confirmar el pedido (el resto se paga al finalizar). También puedes optar por pagar el 100% desde el inicio si lo prefieres.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq_item">
+                    <button class="faq_pregunta">
+                        ¿Hacen envíos o solo es presencial?
+                        <span class="faq_icono">+</span>
+                    </button>
+                    <div class="faq_respuesta">
+                        <p>Por el momento, la entrega es <span class="respuesta_bold">solo presencial</span>. Nos ponemos de acuerdo contigo para establecer un punto de encuentro cómodo para ambos.
+                            <br>Estamos trabajando para ofrecer envíos próximamente, así que si prefieres esa opción, mantente al pendiente de nuestras actualizaciones.</p>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+
+    </main>
+    <footer>
+        <div class="col_izquierda">
+            <h2>Porque cada detalle 
+                <br>merece ser <span>recordado</span></h2>
+            <div class="redes_sociales">
+                <a href="https://www.facebook.com/share/1SQzANCibo/" target="_blank" rel="noopener noreferrer"><img src="facebook_icon.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/altalux.gl?igsh=dzJjaWNnN2d4Zjlh&igsi=dzJjaWNnN2d4Zjlh" target="_blank" rel="noopener noreferrer"><img src="instagram_icon.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@altalux.gl?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer"><img src="tiktok_icon.png" alt="TikTok"></a>
+                <a href="https://wa.link/4jdif8" target="_blank" rel="noopener noreferrer"><img src="whatsapp_icon.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+        <div class="col_derecha">
+            <div>
+                <h3>Correo electrónico</h3>
+                <p>zarpowermty@gmail.com</p>
+            </div>
+            <div>
+                <h3>Número de teléfono</h3>
+                <p>446 136 3602</p>
+            </div>
+            <div>
+                <p>Envíos a todo Querétaro</p>
+            </div>
+        </div>
+    </footer>
+    <script src="inicio.js"></script>
+</body>
+</html>

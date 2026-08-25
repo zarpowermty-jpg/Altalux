@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link href="servicios.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="logotipo.png" alt="logotipo" class="logotipo">
+        </a>
+        <div id="empty_barranav"></div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="index.html#galeria">Galería</a>
+            <a href="sobre_nosotros.html">Sobre nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+    <article id="inicio_servicios" class="purple">
+        <h1>Servicios</h1>
+    </article>
+
+
+    <article class="white" id="servicios_contenido">
+        <!-- TABS DE SELECCIÓN -->
+        <div id="tabs_servicios">
+            <div class="tab_card activo" id="tab_catalogo" onclick="switchTab('catalogo')">
+                <img src="Catalogo2_5.png" alt="Catálogo">
+                <span class="tab_label">Catálogo</span>
+            </div>
+            <div class="tab_card" id="tab_personalizado" onclick="switchTab('personalizado')">
+                <img src="Personalizado1_5.png" alt="Personalizado">
+                <span class="tab_label">Personalizado</span>
+            </div>
+        </div>
+        <!-- PANEL CATÁLOGO -->
+        <div class="panel" id="panel_catalogo">
+            <h2>Nuestros productos</h2>
+            <p class="panel_desc">Elige entre nuestros productos base y lo personalizamos con tu diseño, texto o logo. Todos con grabado láser de alta precisión.</p>
+
+            <div id="productos_grid">
+                <div class="producto_card">
+                    <img src="ParchePiel.jpeg" alt="Parche de piel sintética">
+                    <p class="prod_nombre">Parche de piel sintética</p>
+                    <p class="prod_mat">Piel sintética · 7.6 × 5 cm</p>
+                    <p class="prod_precio">$59</p>
+                </div>
+                <div class="producto_card">
+                    <img src="LlaveroMadera.png" alt="Llavero de madera">
+                    <p class="prod_nombre">Llavero de madera</p>
+                    <p class="prod_mat">Madera · 3 × 4.4 cm</p>
+                    <p class="prod_precio">$99</p>
+                </div>
+                <div class="producto_card">
+                    <img src="LlaveroCuero.jpeg" alt="Llavero de cuero sintético">
+                    <p class="prod_nombre">Llavero de cuero sintético</p>
+                    <p class="prod_mat">Cuero · 3.5 × 5.5 cm</p>
+                    <p class="prod_precio">$99</p>
+                </div>
+            </div>
+            <!-- CARRUSEL 1: CATÁLOGO -->
+            <p class="galeria_titulo">Lo que hemos grabado</p>
+            <div class="carrusel_wrapper mini_carrusel">
+                <button class="carrusel_btn mini_prev" aria-label="Anterior">&#8249;</button>
+                <div class="carrusel_track" id="miniTrackCatalogo">
+                    <div class="slide">
+                        <img src="Catalogo4_5.png" alt="Llavero personalizado">
+                        <div class="slide_info">
+                            <span class="slide_material">Cuero sintético</span>
+                            <p class="slide_nombre">Llavero con logo grabado</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="Catalogo1_5.jpeg" alt="Parche grabado">
+                        <div class="slide_info">
+                            <span class="slide_material">Piel sintética</span>
+                            <p class="slide_nombre">Parche con logo grabado</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="Catalogo2_5.png" alt="Llavero con diseño">
+                        <div class="slide_info">
+                            <span class="slide_material">Madera</span>
+                            <p class="slide_nombre">Llavero con imagen grabada</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="Catalogo5.png" alt="Llavero grabado">
+                        <div class="slide_info">
+                            <span class="slide_material">Cuero sintético</span>
+                            <p class="slide_nombre">Llavero con símbolo grabado</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="Catalogo3_5.png" alt="Llavero grabado">
+                        <div class="slide_info">
+                            <span class="slide_material">Madera</span>
+                            <p class="slide_nombre">Llaveros para compartir con imágenes grabadas</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carrusel_btn mini_next" aria-label="Siguiente">&#8250;</button>
+            </div>
+            <div class="acciones_catalogo">
+                <a href="Catalogo_ALTALUX.pdf" download class="btn_accion">
+                    <svg class="icono_btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Descargar catálogo completo
+                </a>
+                <button class="btn_accion" onclick="window.open('https://wa.link/4jdif8', '_blank')">
+                    <img src="whatsapp_icon.png" alt="WhatsApp" class="icono_btn">
+                    Quiero ordenar por WhatsApp
+                </button>
+            </div>
+        </div>
+        <!-- PANEL PERSONALIZADO -->
+        <div class="panel oculto" id="panel_personalizado">
+            <h2>¿Tienes una idea diferente?</h2>
+            <p class="panel_desc">Además de nuestros artículos de línea, realizamos grabados personalizados sobre una amplia variedad de materiales. Si buscas un material específico, nosotros lo conseguimos y lo grabamos para ti.</p>
+            <div id="pasos">
+                <div class="paso">
+                    <div class="paso_num">1</div>
+                    <p>Cuéntanos tu idea por WhatsApp</p>
+                </div>
+                <div class="paso">
+                    <div class="paso_num">2</div>
+                    <p>Te enviamos propuesta y cotización</p>
+                </div>
+                <div class="paso">
+                    <div class="paso_num">3</div>
+                    <p>Lo grabamos y te lo entregamos</p>
+                </div>
+            </div>
+            <p class="galeria_titulo">Materiales que trabajamos:</p>
+            <div id="materiales_grid">
+                <div class="material_item">
+                    <img src="madera_icon.png" alt="Maderas" class="iconos">
+                    <div>
+                        <p class="mat_nombre">Maderas</p>
+                        <p class="mat_detalle">Triplay, MDF, pino, maderas naturales</p>
+                    </div>
+                </div>
+                <div class="material_item">
+                    <img src="pieles_icon.png" alt="Pieles" class="iconos">
+                    <div>
+                        <p class="mat_nombre">Pieles</p>
+                        <p class="mat_detalle">Piel natural y sintética (vinipiel)</p>
+                    </div>
+                </div>
+                <div class="material_item">
+                    <img src="papel_icon.png" alt="Papel" class="iconos">
+                    <div>
+                        <p class="mat_nombre">Papel y cartón</p>
+                        <p class="mat_detalle">Cartulinas de alto gramaje, cartón corrugado</p>
+                    </div>
+                </div>
+                <div class="material_item">
+                    <img src="termos_icon.png" alt="Termos" class="iconos">
+                    <div>
+                        <p class="mat_nombre">Termos y metales</p>
+                        <p class="mat_detalle">Con pintura electrostática (tipo Yeti)</p>
+                    </div>
+                </div>
+                <div class="material_item">
+                    <img src="otros_icon.png" alt="Otros" class="iconos">
+                    <div>
+                        <p class="mat_nombre">Otros</p>
+                        <p class="mat_detalle">Corcho, pizarra y fieltro</p>
+                    </div>
+                </div>
+            </div>
+            <!-- CARRUSEL 2: PERSONALIZADO -->
+            <p class="galeria_titulo">Lo que hemos grabado</p>
+            <div class="carrusel_wrapper mini_carrusel">
+                <button class="carrusel_btn mini_prev2" aria-label="Anterior">&#8249;</button>
+                <div class="carrusel_track" id="miniTrackPersonalizado">
+                    <div class="slide">
+                        <img src="Personalizado2.jpeg" alt="Termo grabado">
+                        <div class="slide_info">
+                            <span class="slide_material">Metal</span>
+                            <p class="slide_nombre">Termo con nombre grabado</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="Personalizado1_5.png" alt="Placa grabada">
+                        <div class="slide_info">
+                            <span class="slide_material">Madera</span>
+                            <p class="slide_nombre">Placa grabada con redes</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="Personalizado3.png" alt="Llavero personalizado">
+                        <div class="slide_info">
+                            <span class="slide_material">Cuero sintético</span>
+                            <p class="slide_nombre">Etiquetas para crochet con frase grabada</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="Personalizado4.png" alt="Llavero cuchara">
+                        <div class="slide_info">
+                            <span class="slide_material">Madera</span>
+                            <p class="slide_nombre">Llaveros de cuchara grabado con logo</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carrusel_btn mini_next2" aria-label="Siguiente">&#8250;</button>
+            </div>
+            <div style="display:flex; justify-content:center; margin-top:24px;">
+                <button class="btn_accion" onclick="window.open('https://wa.link/4jdif8', '_blank')">
+                    <img src="whatsapp_icon.png" alt="WhatsApp" class="icono_btn">
+                    Cuéntanos tu idea
+                </button>
+            </div>
+        </div>
+    </article>
+
+    </main>
+    <footer>
+        <div class="col_izquierda">
+            <h2>Porque cada detalle 
+                <br>merece ser <span>recordado</span></h2>
+            <div class="redes_sociales">
+                <a href="https://www.facebook.com/share/1SQzANCibo/" target="_blank" rel="noopener noreferrer"><img src="facebook_icon.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/altalux.gl?igsh=dzJjaWNnN2d4Zjlh&igsi=dzJjaWNnN2d4Zjlh" target="_blank" rel="noopener noreferrer"><img src="instagram_icon.png" alt="Instagram"></a>
+                <a href="https://www.tiktok.com/@altalux.gl?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer"><img src="tiktok_icon.png" alt="TikTok"></a>
+                <a href="https://wa.link/4jdif8" target="_blank" rel="noopener noreferrer"><img src="whatsapp_icon.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+        <div class="col_derecha">
+            <div>
+                <h3>Correo electrónico</h3>
+                <p>zarpowermty@gmail.com</p>
+            </div>
+            <div>
+                <h3>Número de teléfono</h3>
+                <p>446 136 3602</p>
+            </div>
+            <div>
+                <p>Envíos a todo Querétaro</p>
+            </div>
+        </div>
+    </footer>
+    <script src="servicios.js"></script>
+</body>
+</html>

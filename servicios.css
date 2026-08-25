@@ -1,0 +1,524 @@
+@import url("https://use.typekit.net/fxd4tpl.css");
+@import url("https://use.typekit.net/fxd4tpl.css");
+
+body{
+    color: black;
+    margin:0;
+    font-size: 15px;
+}
+p{
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+h1, h2{
+    font-family: "playfair-display", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+h2 {
+    font-size: 27px;
+}
+header {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    background-color: #3E0D4E;
+    padding: 0px 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+}
+.logotipo {
+    width: 140px;
+}
+#empty_barranav {
+    flex: 1;
+}
+a {
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 20px 15px;
+}
+.purple {
+    background-color: #4C1060;
+    color: white;
+}
+.white {
+    background-color: white;
+    color: black;
+}
+.white h1, .white h2 {
+    color: #4C1060;
+}
+.purple h1, .purple h2 {
+    color: #F8DC7D;
+}
+.iconos{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#inicio_servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 225px;
+    width: 100%;
+    background-image: url("servicios_inicio.png");
+    margin-top: 90px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+#inicio_servicios h1 {
+    color: white;
+    font-size: 35px;
+    font-weight: 400;
+}
+footer {
+    color: white;
+    background-color: #4C1060;
+    padding: 60px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+footer h2 {
+    font-weight: 400;
+    font-size: 25px;
+    text-align: left;
+}
+.col_izquierda h2{
+    margin-bottom: 0;
+}
+.col_izquierda span {
+    font-weight: 400;
+    font-style: italic;
+    color: #F8DC7D;
+}
+.redes_sociales {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+    margin-top: 25px;
+    padding-left: 0;
+    margin-left: 0;
+}
+.redes_sociales a,
+.redes_sociales img {
+    width: 27px;
+    height: 27px;
+    object-fit: contain;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.redes_sociales a img {
+    width: 100%;
+    height: 100%;
+}
+.col_derecha {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.col_derecha h3 {
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    margin: 0 0 2px 0;
+}
+.col_derecha p {
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    margin: 0;
+}
+.p_center {
+    text-align: center;
+}
+
+
+/* ===== SERVICIOS ===== */
+#servicios_contenido {
+    padding: 40px 10%;
+}
+#tabs_servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 95px;
+    max-width: 1150px;
+    margin: 0 auto 40px;
+}
+.tab_card {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    height: 280px;
+    border-top: 4px solid transparent;
+    box-shadow: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.tab_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* CAPA NEGRA SUTIL (Para el estado NO seleccionado) */
+.tab_card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ESTADO SELECCIONADO */
+.tab_card.activo {
+    border-top: 6px solid #4C1060;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+}
+.tab_card.activo::after {
+    opacity: 0;
+}
+.tab_label {
+    position: absolute;
+    bottom: 14px;
+    left: 16px;
+    font-family: "playfair-display", serif;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    z-index: 2;
+}
+.panel {
+    display: block;
+}
+.panel.oculto {
+    display: none;
+}
+.panel_desc {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+    text-align: left;
+}
+#productos_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 32px;
+}
+.producto_card {
+    border: 1.5px solid #D4A34A;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #FFFCF5;
+}
+.producto_card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+.producto_card .prod_nombre,
+.producto_card .prod_mat,
+.producto_card .prod_precio {
+    margin: 0;
+    padding: 0 12px;
+    text-align: left;
+}
+.prod_nombre {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2D1B4E;
+    padding-top: 10px !important;
+}
+.prod_mat {
+    font-size: 11px;
+    color: #888;
+    padding-top: 2px !important;
+}
+.prod_precio {
+    font-size: 15px;
+    color: #D4A359;
+    font-weight: 600;
+    padding: 6px 12px 12px !important;
+}
+.galeria_titulo {
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 14px;
+    text-align: left;
+}
+
+/* ===== CARRUSELES ===== */
+.carrusel_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    max-width: 950px;
+    margin: 16px auto 24px;
+}
+.carrusel_track {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    min-height: 0;
+}
+.slide {
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    transform: scale(0.85);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out, flex 0.4s ease-in-out;
+    display: none;
+    flex: 0 0 180px;
+    height: 220px;
+}
+.slide.lateral {
+    display: block;
+    opacity: 0.45;
+    transform: scale(0.9);
+}
+.slide.activo {
+    display: block;
+    flex: 0 0 420px;
+    height: 280px;
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.slide_info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(62, 13, 78, 0.95));
+    padding: 28px 16px 16px;
+    transition: opacity 0.3s ease;
+}
+.slide_material {
+    font-family: "poppins", sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #F8DC7D;
+    display: block;
+    margin-bottom: 3px;
+}
+.slide_nombre {
+    font-family: "poppins", sans-serif;
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    font-weight: 500;
+}
+.slide.lateral .slide_info {
+    opacity: 0;
+    pointer-events: none;
+}
+.carrusel_btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid #F8DC7D;
+    background: rgba(248, 220, 125, 0.1);
+    color: #F8DC7D;
+    font-size: 28px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.2s, transform 0.1s;
+    line-height: 1;
+    padding: 0;
+}
+.carrusel_btn:hover {
+    background: rgba(248, 220, 125, 0.25);
+}
+
+/* Adaptación de botones para los carruseles dentro de Servicios */
+.mini_carrusel .carrusel_btn {
+    border-color: #4C1060;
+    color: #4C1060;
+    background: transparent;
+}
+.mini_carrusel .carrusel_btn:hover {
+    background: rgba(76, 16, 96, 0.1);
+}
+
+/* ===== OTROS ELEMENTOS DE SERVICIOS ===== */
+#botones_catalogo {
+    display: flex;
+    gap: 14px;
+    margin-top: 8px;
+}
+.btn_principal {
+    background: #4C1060;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-family: "poppins", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn_secundario {
+    background: transparent;
+    color: #4C1060;
+    border: 1px solid #4C1060;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-family: "poppins", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.btn_secundario:hover {
+    background: #4C1060;
+    color: white;
+}
+#pasos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin-bottom: 28px;
+}
+.paso {
+    background: #FFFCF5;
+    border: 1px solid #EDE8F5;
+    border-radius: 10px;
+    padding: 20px 16px;
+    text-align: center;
+    border-top: 4px solid #D4A359;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+}
+.paso_num {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #4C1060;
+    color: #F8DC7D;
+    font-family: "poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+}
+.paso p {
+    font-size: 13px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+}
+#materiales_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 20px; 
+    margin-bottom: 28px;
+}
+#materiales_grid > :nth-child(even) {
+    justify-self: end;
+}
+#materiales_grid > :nth-child(odd) {
+    justify-self: start;
+}
+.material_item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    border: 1.5px solid #D4A34A;
+    border-radius: 8px;
+    background: #FFFCF5;
+    width: 525px;
+    max-width: 100%;
+}
+.material_item .iconos {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+.mat_nombre {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2D1B4E;
+    margin: 0;
+}
+.mat_detalle {
+    font-size: 11px;
+    color: #888;
+    margin: 0;
+}
+.acciones_catalogo {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+.btn_accion {
+    background-color: #4C1060;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-family: "poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.btn_accion:hover {
+    transform: translateY(-2px);
+}
+.icono_btn {
+    width: 18px;
+    height: 18px;
+}
