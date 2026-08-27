@@ -1,5 +1,4 @@
 @import url("https://use.typekit.net/fxd4tpl.css");
-@import url("https://use.typekit.net/fxd4tpl.css");
 
 body{
     color: black;
@@ -69,7 +68,7 @@ a {
     align-items: center;
     height: 225px;
     width: 100%;
-    background-image: url("sobrenosotros_inicio.png");
+    background-image: url("../img/sobrenosotros_inicio.png");
     margin-top: 90px;
     background-size: cover;
     background-position: center;

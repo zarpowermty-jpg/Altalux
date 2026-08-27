@@ -1,5 +1,4 @@
 @import url("https://use.typekit.net/fxd4tpl.css");
-@import url("https://use.typekit.net/fxd4tpl.css");
 
 body{
     color: black;
@@ -68,7 +67,7 @@ a {
     height: 100vh;
     width: 100%;
     top: 0;
-    background-image: url("fondo_inicioCORTO.png");
+    background-image: url("../img/fondo_inicioCORTO.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

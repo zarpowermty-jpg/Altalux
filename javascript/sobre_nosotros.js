@@ -1,13 +1,13 @@
 // 1. Crea una lista (array) con las rutas de tus fotos.
 // Añade aquí todas las fotos que quieras que ciclen.
 const misFotos = [
-    "Catalogo4.jpeg", // Esta debe ser la misma que pusiste en el HTML
-    "Personalizado1.jpeg", // Cambia estos nombres por tus archivos reales
-    "Catalogo1.jpeg",
-    "Personalizado2.jpeg",
-    "Catalogo2.jpeg",
-    "Personalizado3.png",
-    "Catalogo3.jpeg"
+    "../img/Catalogo4.jpeg", // Esta debe ser la misma que pusiste en el HTML
+    "../img/Personalizado1.jpeg", // Cambia estos nombres por tus archivos reales
+    "../img/Catalogo1.jpeg",
+    "../img/Personalizado2.jpeg",
+    "../img/Catalogo2.jpeg",
+    "../img/Personalizado3.png",
+    "../img/Catalogo3.jpeg"
 ];
 
 // 2. Variables de control
